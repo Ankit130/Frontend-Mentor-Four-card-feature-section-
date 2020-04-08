@@ -1,0 +1,113 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+body {
+    background: hsl(0, 0%, 98%);
+    font-family:Poppins;
+    font-weight:200;
+    color:hsl(229, 6%, 66%);
+    font-size:15px;
+}
+header{
+    display:grid;
+    padding:30px 0px 20px 0px;
+    grid-template-columns:0.75fr 0.75fr 2fr 0.75fr 0.75fr;
+    grid-template-areas:"blank1 blank2 heading1 blank3 blank4"
+    "blank9 blank11 para blank12 blank10";
+    text-align:center;
+}
+header div{
+    grid-area:heading1;
+}
+.light{
+    font-weight:400;
+}
+.dark{
+    font-weight:600;
+    color:hsl(234, 12%, 34%);
+}
+header p{
+    grid-area:para;
+    align-content:top;
+}
+.container{
+    margin:20px 20px 50px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:"sup team karma"
+    "sup calc karma";
+    grid-gap:20px;
+    justify-items:center;
+    align-items:center;
+}
+.item{
+    display:grid;
+    grid-template-rows:5px 50px 50px 1fr ;
+    background:white;
+    height:250px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:1px 5px 10px rgba(0,0,0,0.1),-1px 5px 10px  rgba(0,0,0,0.1) ;
+}
+.item1{
+    grid-area:sup;
+    justify-self:end; 
+}
+
+.item2{
+    grid-area:team;
+}
+
+.item3{
+    grid-area:karma;
+    justify-self:start;
+    
+}
+.item4{
+    grid-area:calc;
+    margin:10px;
+}
+.block{
+    display:block;
+    content:'';
+    height:5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.block1{
+    background:cyan;
+}
+.block2{
+    background:red;
+}
+.block3{
+    background:blue;
+}
+.block4{
+    background:orange;
+}
+.item .dark{
+    padding:20px 0px 0px 20px;
+    font-size:20px;
+    align-self:end;
+}
+.item p{
+    padding:0px 0px 0px 20px;
+    align-self:start;
+    justify-self:start;
+    text-align:start;
+    margin:0px 0px 10px 0px; 
+}
+.item img{
+    align-self:end;
+    justify-self:end;
+    margin:30px 40px;
+}
